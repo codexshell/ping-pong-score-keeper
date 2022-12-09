@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 2em;
+}
+
+img {
+  max-width: 100%;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+
+#app {
+  max-width: 30rem;
+  margin-inline: auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+header {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  padding-bottom: 1rem;
+}
+
+h1 {
+  font-size: 1rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+#scores {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+p,
+label {
+  padding-left: 2rem;
+}
+
+#instructions {
+  --flow-space: 0.25rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+select {
+  border-radius: 3rem;
+  padding: 5px 15px;
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+footer {
+  display: flex;
+}
+
+button {
+  flex-basis: 100%;
+  font-size: 1rem;
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+button:first-child {
+  background-color: hsl(120, 41%, 53%);
+}
+
+button:last-child {
+  background-color: hsl(0, 67%, 50%);
+}
+
+button:nth-of-type(2) {
+  background-color: rgb(75, 75, 194);
+}
+
+.win {
+  color: green;
+}
+
+.lose {
+  color: red;
+}
+
+.draw {
+  color: orange;
+}
